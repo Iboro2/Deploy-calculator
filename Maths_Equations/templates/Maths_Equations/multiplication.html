@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'Maths_Equations/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'Maths_Equations/select.css' %}">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+</head>
+<body style="background-image: url('{% static 'Maths_Equations/image/bkgrnd.gif' %}');">
+  
+    <div class="cont">
+
+    <h2>What are we calculating today?</h2>
+
+    <div class="select-box animate__slideInLeft animate__animated" class="" >
+      <div class="select-box__current" tabindex="1" >
+          <div class="select-box__value" >
+            <input  class="select-box__input" type="radio" id="" value="1" name="Ben" checked="checked"/>
+            <p class="select-box__input-text">SIMPLE MATH</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="2" name="Ben"/>
+            <p class="select-box__input-text">CIRCLE</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="3" name="Ben"/>
+            <p class="select-box__input-text">VARIATION</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="4" name="Ben"/>
+            <p class="select-box__input-text">SIMULTANEOUS Equ...</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="5" name="Ben"/>
+            <p class="select-box__input-text">QUADRATIC</p>
+        </div>
+          <!-- <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="6" name="Ben"/>
+            <p class="select-box__input-text">CALCULUS</p>
+        </div> -->
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="7" name="Ben"/>
+            <p class="select-box__input-text">POLYGON</p>
+        </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="8" name="Ben"/>
+            <p class="select-box__input-text">MATRIX</p>
+          </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+        </div>
+        <ul class="select-box__list">
+          <a href="{% url 'layout' %}">
+          <li>
+            <label class="select-box__option" for="0" aria-hidden="aria-hidden" >SIMPLE MATH</label>
+          </li>
+        </a>
+          <a href="{% url 'circle' %}">
+          <li>
+            <label class="select-box__option" for="1" aria-hidden="aria-hidden">CIRCLE</label>
+          </li>
+          </a>
+          <a href="{% url 'variation' %}">
+          <li>
+            <label class="select-box__option" for="2" aria-hidden="aria-hidden">VARIATION</label>
+          </li>
+          </a>
+          <a href="{% url 'simultaneous' %}">
+          <li>
+            <label class="select-box__option" for="3" aria-hidden="aria-hidden">SIMULTANEOUS Equ...</label>
+          </li>
+        </a>
+        <a href="{% url 'quadratic'%}">
+          <li>
+            <label class="select-box__option" for="4" aria-hidden="aria-hidden">QUADRATIC</label>
+          </li>
+          </a>
+          <a href="{% url 'calculus'%}">
+          <li>
+            <label class="select-box__option" for="5" aria-hidden="aria-hidden">CALCULUS</label>
+          </li>
+          </a>
+          <a href="{% url 'polygon'%}">
+          <li>
+            <label class="select-box__option" for="6" aria-hidden="aria-hidden">POLYGON</label>
+          </li>
+          </a>
+          <a href="{% url 'matrix'%}">
+          <li>
+            <label class="select-box__option" for="7" aria-hidden="aria-hidden">MATRIX</label>
+          </li>
+          </a>
+        </ul>
+      </div>
+
+
+
+
+      
+      <div class="select-box1 animate__slideInLeft animate__animated" >
+        <div class="select-box__current" tabindex="1" >
+          <div class="select-box__value" >
+            <input  class="select-box__input" type="radio" id="" value="1" name="Ben1" />
+            <p class="select-box__input-text">ADDITION</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="2" name="Ben1"  />
+            <p class="select-box__input-text">SUBTRACTION</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="3" name="Ben1"/>
+            <p class="select-box__input-text">DIVISION</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="4" name="Ben1" checked="checked"/>
+            <p class="select-box__input-text">MULTIPLICATION</p>
+          </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="5" name="Ben1"/>
+            <p class="select-box__input-text">SQUARE</p>
+        </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="6" name="Ben1" />
+            <p class="select-box__input-text">SQUARE ROOT</p>
+        </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="7" name="Ben1"/>
+            <p class="select-box__input-text">POLYGON</p>
+        </div>
+          <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="" value="8" name="Ben1"/>
+            <p class="select-box__input-text">MATRIX</p>
+          </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+        </div>
+        <ul class="select-box__list">
+          <a href="{% url 'layout' %}">
+          <li>
+            <label class="select-box__option" for="0" aria-hidden="aria-hidden" >ADDITION</label>
+          </li>
+        </a>
+          <a href="{% url 'subtraction' %}">
+          <li>
+            <label class="select-box__option" for="1" aria-hidden="aria-hidden">SUBTRACTION</label>
+          </li>
+          </a>
+          <a href="{% url 'division' %}">
+          <li>
+            <label class="select-box__option" for="2" aria-hidden="aria-hidden">DIVISION</label>
+          </li>
+          </a>
+          <a href="{% url 'multiplication' %}">
+          <li>
+            <label class="select-box__option" for="3" aria-hidden="aria-hidden">MULTIPLICATION</label>
+          </li>
+        </a>
+        <a href="{% url 'square'%}">
+          <li>
+            <label class="select-box__option" for="4" aria-hidden="aria-hidden">SQUARE</label>
+          </li>
+          </a>
+          <a href="{% url 'square_root' %}">
+          <li>
+            <label class="select-box__option" for="5" aria-hidden="aria-hidden">SQUARE ROOT</label>
+          </li>
+          </a>
+          <a href="{% url 'polygon'%}">
+          <li>
+            <label class="select-box__option" for="6" aria-hidden="aria-hidden">POLYGON</label>
+          </li>
+          </a>
+          <a href="{% url 'matrix'%}">
+          <li>
+            <label class="select-box__option" for="7" aria-hidden="aria-hidden">MATRIX</label>
+          </li>
+          </a>
+        </ul>
+      </div>
+  <form action="{% url 'ansbook3' %}" method="get">
+    <input type="number" placeholder="first number" name="first">
+    <br><br>
+    <input type="number" placeholder="second number" name="second">
+    <br><br>
+    <input type="submit" value="SOLVE" class="animate__slideInLeft animate__animated">
+  </form>
+  </div>
+    
+
+    
+
+
+
+  <!-- <img class="img1" src="{% static 'Maths_Equations/image/bkgrnd.gif' %}" alt=""> -->
+
+</body>
+<script src="{% static 'Maths_Equations/select.js' %}"></script>
+</html>
